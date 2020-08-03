@@ -1,4 +1,4 @@
-# Django
+# minilibrary
 __Installation__
 
 This is a website supported by the Django framework.  
