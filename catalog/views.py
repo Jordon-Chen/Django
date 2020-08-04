@@ -151,3 +151,9 @@ class BookUpdate(UpdateView):
 class BookDelete(DeleteView):
     model = Book
     success_url = reverse_lazy('books')
+
+def csrfTest(request):
+    context = {
+        'test' : 'test text'
+    }
+    return render(request, 'catalog/csrf_test.html', context=context)

@@ -14,6 +14,7 @@
     <li><strong>Authors:</strong> {{ num_authors }}</li>
     <li><strong>Genres:</strong> {{ num_genres }}</li>
     <li><strong>Books with Habits in the title :</strong> {{ num_books_with_Habits }}</li>
+    <li><a href="{% url 'csrf_attack_test' %}">CSRF test</a></li>
   </ul>
 {% endblock %}
 

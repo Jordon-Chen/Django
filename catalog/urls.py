@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
-
+from . import templates
 
 urlpatterns = [
     path('', views.index, name='index'),
@@ -18,4 +18,6 @@ urlpatterns = [
     path('book/create/', views.BookCreate.as_view(), name='book_create'),
     path('book/<int:pk>/update/', views.BookUpdate.as_view(), name='book_update'),
     path('book/<int:pk>/delete/', views.BookDelete.as_view(), name='bokk_delete'),
+    path('csrfAttackTest/', views.csrfTest, name = 'csrf_attack_test'),
 ]
+
